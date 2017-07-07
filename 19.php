@@ -4,7 +4,7 @@
 текущий день выведите курсивом. Текущий день должен храниться в переменной $day.
  */
 $arr_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-$day = "Saturday";
+$day = date("l");
 foreach ($arr_week as $item_week){
     if ($item_week === $day) echo "<em>". $item_week ."</em><br>";
         else
